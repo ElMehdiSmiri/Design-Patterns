@@ -1,6 +1,7 @@
 using Patterns.Strategy;
 using Patterns.Strategy.ConcreteCookingStrategies;
 using Patterns.Strategy.ConcreteCookingStrategies.Interface;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// This adds the enum descriptions to the swagger docs
+builder.Services.AddControllers().AddJsonOptions(options =>
+            options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 // Services Strategy pattern EMS
 builder.Services.AddScoped<ICooker, Cooker>();
