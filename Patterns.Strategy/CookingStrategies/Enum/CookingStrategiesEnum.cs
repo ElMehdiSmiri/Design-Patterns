@@ -1,4 +1,4 @@
-﻿namespace Patterns.Strategy.ConcreteCookingStrategies.Enum
+﻿namespace DesignPatterns.Strategy.CookingStrategies.Enum
 {
     public enum CookingStrategiesEnum
     {

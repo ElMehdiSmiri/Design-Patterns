@@ -1,6 +1,6 @@
-using Patterns.Strategy;
-using Patterns.Strategy.ConcreteCookingStrategies;
-using Patterns.Strategy.ConcreteCookingStrategies.Interface;
+using DesignPatterns.Strategy;
+using DesignPatterns.Strategy.CookingStrategies;
+using DesignPatterns.Strategy.CookingStrategies.Interface;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

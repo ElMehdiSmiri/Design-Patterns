@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Patterns.Strategy\Patterns.Strategy.csproj" />
+    <ProjectReference Include="..\Patterns.Strategy\DesignPatterns.Strategy.csproj" />
   </ItemGroup>
 
 </Project>

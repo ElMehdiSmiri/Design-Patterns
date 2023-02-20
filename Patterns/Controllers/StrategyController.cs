@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Patterns.Strategy;
-using Patterns.Strategy.ConcreteCookingStrategies.Enum;
+﻿using DesignPatterns.Strategy;
+using DesignPatterns.Strategy.CookingStrategies.Enum;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Patterns.Controllers
+namespace DesignPatterns.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

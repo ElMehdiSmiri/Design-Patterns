@@ -1,6 +1,6 @@
-﻿using Patterns.Strategy.ConcreteCookingStrategies.Enum;
+﻿using DesignPatterns.Strategy.CookingStrategies.Enum;
 
-namespace Patterns.Strategy.ConcreteCookingStrategies.Interface
+namespace DesignPatterns.Strategy.CookingStrategies.Interface
 {
     public interface ICookingStrategy
     {
