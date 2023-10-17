@@ -1,7 +1,7 @@
-﻿using DesignPatterns.FactoryMethod.Enum;
-using DesignPatterns.FactoryMethod.Products;
+﻿using DesignPatterns.Creational.FactoryMethod.Enum;
+using DesignPatterns.Creational.FactoryMethod.Products;
 
-namespace DesignPatterns.FactoryMethod
+namespace DesignPatterns.Creational.FactoryMethod
 {
     public class FoodFactory : IFoodFactory
     {

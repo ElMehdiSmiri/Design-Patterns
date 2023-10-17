@@ -1,6 +1,6 @@
-﻿using DesignPatterns.FactoryMethod.Enum;
+﻿using DesignPatterns.Creational.FactoryMethod.Enum;
 
-namespace DesignPatterns.FactoryMethod.Products
+namespace DesignPatterns.Creational.FactoryMethod.Products
 {
     public class OrangeJuice : IFood
     {

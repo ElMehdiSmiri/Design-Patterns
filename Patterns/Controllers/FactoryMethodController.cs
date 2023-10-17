@@ -1,5 +1,5 @@
-﻿using DesignPatterns.FactoryMethod;
-using DesignPatterns.FactoryMethod.Enum;
+﻿using DesignPatterns.Creational.FactoryMethod;
+using DesignPatterns.Creational.FactoryMethod.Enum;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
@@ -15,8 +15,8 @@ namespace DesignPatterns.Controllers
             _foodFactory = foodFactory;
         }
 
-        [HttpGet("/Factory")]
-        public IActionResult GetCalories(int weight, FoodEnum foodtype)
+        [HttpGet("/GetCaloriesForFoodType")]
+        public IActionResult Get(int weight, FoodEnum foodtype)
         {
             var food = _foodFactory.CreateFood(foodtype);
 

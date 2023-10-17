@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.FactoryMethod.Enum
+﻿namespace DesignPatterns.Creational.FactoryMethod.Enum
 {
     public enum FoodEnum
     {

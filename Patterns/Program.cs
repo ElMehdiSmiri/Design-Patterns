@@ -15,8 +15,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
             options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 // Services EMS
-builder.Services.AddStrategyServices();
-builder.Services.AddFactoryMethodServices();
+builder.Services.AddSolutionServices();
 
 var app = builder.Build();
 
