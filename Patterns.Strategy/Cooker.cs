@@ -1,7 +1,7 @@
-﻿using DesignPatterns.Strategy.CookingStrategies.Enum;
-using DesignPatterns.Strategy.CookingStrategies.Interface;
+﻿using DesignPatterns.Behavioral.Strategy.CookingStrategies.Enum;
+using DesignPatterns.Behavioral.Strategy.CookingStrategies.Interface;
 
-namespace DesignPatterns.Strategy
+namespace DesignPatterns.Behavioral.Strategy
 {
     public class Cooker : ICooker
     {

@@ -1,9 +1,9 @@
-﻿using DesignPatterns.Strategy.CookingStrategies.Interface;
-using DesignPatterns.Strategy.CookingStrategies;
-using DesignPatterns.Strategy;
-using DesignPatterns.Creational.FactoryMethod;
+﻿using DesignPatterns.Creational.FactoryMethod;
 using DesignPatterns.Creational.FactoryMethod.Products;
 using DesignPatterns.Creational.Singleton;
+using DesignPatterns.Behavioral.Strategy.CookingStrategies.Interface;
+using DesignPatterns.Behavioral.Strategy.CookingStrategies;
+using DesignPatterns.Behavioral.Strategy;
 
 namespace DesignPatterns.Extensions
 {

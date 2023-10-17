@@ -14,7 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns.Creational.Singleton\DesignPatterns.Creational.Singleton.csproj" />
     <ProjectReference Include="..\DesignPatterns.FactoryMethod\DesignPatterns.Creational.FactoryMethod.csproj" />
-    <ProjectReference Include="..\Patterns.Strategy\DesignPatterns.Strategy.csproj" />
+    <ProjectReference Include="..\Patterns.Strategy\DesignPatterns.Behavioral .Strategy.csproj" />
   </ItemGroup>
 
 </Project>

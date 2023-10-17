@@ -5,11 +5,11 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "Patterns\DesignPatterns.csproj", "{554BA783-4A6C-434B-8212-0EDB023F73ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Strategy", "Patterns.Strategy\DesignPatterns.Strategy.csproj", "{9A2F9421-4F55-4935-BB4B-DF470F92A9E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Behavioral .Strategy", "Patterns.Strategy\DesignPatterns.Behavioral .Strategy.csproj", "{9A2F9421-4F55-4935-BB4B-DF470F92A9E7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Creational.FactoryMethod", "DesignPatterns.FactoryMethod\DesignPatterns.Creational.FactoryMethod.csproj", "{D7B7DCB4-9A08-4089-A492-7EBCC99F4308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational.Singleton", "DesignPatterns.Creational.Singleton\DesignPatterns.Creational.Singleton.csproj", "{D31D01BE-2308-441E-8CFD-F3E1B4974596}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Creational.Singleton", "DesignPatterns.Creational.Singleton\DesignPatterns.Creational.Singleton.csproj", "{D31D01BE-2308-441E-8CFD-F3E1B4974596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

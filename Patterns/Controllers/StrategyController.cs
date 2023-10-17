@@ -1,5 +1,5 @@
-﻿using DesignPatterns.Strategy;
-using DesignPatterns.Strategy.CookingStrategies.Enum;
+﻿using DesignPatterns.Behavioral.Strategy;
+using DesignPatterns.Behavioral.Strategy.CookingStrategies.Enum;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
