@@ -5,12 +5,13 @@ This repository contains examples of the most commonly used design patterns in C
 ## Patterns Included
 - Behavioral Patterns
   - Strategy
+- Creational Patterns
+  - Factory Method
 
 ## Roadmap for the future
 - Creational Patterns
   - Abstract Factory
   - Builder
-  - Factory Method
   - Prototype
   - Singleton
 - Structural Patterns
