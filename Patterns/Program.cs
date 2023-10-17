@@ -1,6 +1,4 @@
-using DesignPatterns.Strategy;
-using DesignPatterns.Strategy.CookingStrategies;
-using DesignPatterns.Strategy.CookingStrategies.Interface;
+using DesignPatterns.Extensions;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,12 +14,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers().AddJsonOptions(options =>
             options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
-// Services Strategy pattern EMS
-builder.Services.AddScoped<ICooker, Cooker>();
-builder.Services.AddScoped<ICookingStrategy, DeepFryCooker>();
-builder.Services.AddScoped<ICookingStrategy, GrillCooker>();
-builder.Services.AddScoped<ICookingStrategy, RoastCooker>();
-
+// Services EMS
+builder.Services.AddStrategyServices();
+builder.Services.AddFactoryMethodServices();
 
 var app = builder.Build();
 
@@ -39,3 +34,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

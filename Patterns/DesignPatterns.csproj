@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.FactoryMethod\DesignPatterns.FactoryMethod.csproj" />
     <ProjectReference Include="..\Patterns.Strategy\DesignPatterns.Strategy.csproj" />
   </ItemGroup>
 

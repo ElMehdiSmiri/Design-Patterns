@@ -5,7 +5,7 @@ namespace DesignPatterns.Strategy
 {
     public class Cooker : ICooker
     {
-        private IEnumerable<ICookingStrategy> _cookingServices;
+        private readonly IEnumerable<ICookingStrategy> _cookingServices;
 
         public Cooker(IEnumerable<ICookingStrategy> cookingServices)
         {
@@ -15,6 +15,7 @@ namespace DesignPatterns.Strategy
         public string CookMyFood(string food, CookingStrategiesEnum cookingStrategy)
         {
             var strategy = _cookingServices.Single(s => s.CookingStrategy == cookingStrategy);
+
             return strategy.Cook(food);
         }
     }
