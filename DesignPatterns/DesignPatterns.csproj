@@ -13,8 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns.Creational.Singleton\DesignPatterns.Creational.Singleton.csproj" />
-    <ProjectReference Include="..\DesignPatterns.FactoryMethod\DesignPatterns.Creational.FactoryMethod.csproj" />
-    <ProjectReference Include="..\Patterns.Strategy\DesignPatterns.Behavioral .Strategy.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Creational.FactoryMethod\DesignPatterns.Creational.FactoryMethod.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Behavioral.Strategy\DesignPatterns.Behavioral.Strategy.csproj" />
   </ItemGroup>
 
 </Project>
