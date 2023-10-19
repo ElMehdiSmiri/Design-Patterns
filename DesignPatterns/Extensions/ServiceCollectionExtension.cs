@@ -4,7 +4,6 @@ using DesignPatterns.Creational.Singleton;
 using DesignPatterns.Behavioral.Strategy.CookingStrategies.Interface;
 using DesignPatterns.Behavioral.Strategy.CookingStrategies;
 using DesignPatterns.Behavioral.Strategy;
-using DesignPatterns.Behavioral.Observer.V1;
 
 namespace DesignPatterns.Extensions
 {
@@ -42,7 +41,8 @@ namespace DesignPatterns.Extensions
 
         public static void AddObserverServices(this IServiceCollection services)
         {
-            services.AddSingleton<IWeatherStation, WeatherStation>();
+            services.AddSingleton<Behavioral.Observer.V1.IWeatherStation, Behavioral.Observer.V1.WeatherStation>();
+            services.AddSingleton<Behavioral.Observer.V2.IWeatherStation, Behavioral.Observer.V2.WeatherStation>();
         }
     }
 }
