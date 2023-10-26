@@ -4,6 +4,8 @@ using DesignPatterns.Creational.Singleton;
 using DesignPatterns.Behavioral.Strategy.CookingStrategies.Interface;
 using DesignPatterns.Behavioral.Strategy.CookingStrategies;
 using DesignPatterns.Behavioral.Strategy;
+using DesignPatterns.Structural.Adapter.Interfaces;
+using DesignPatterns.Structural.Adapter;
 
 namespace DesignPatterns.Extensions
 {
@@ -15,6 +17,7 @@ namespace DesignPatterns.Extensions
             services.AddFactoryMethodServices();
             services.AddSingletonServices();
             services.AddObserverServices();
+            services.AddAdapterServices();
         }
 
         public static void AddStrategyServices(this IServiceCollection services)
@@ -43,6 +46,12 @@ namespace DesignPatterns.Extensions
         {
             services.AddSingleton<Behavioral.Observer.V1.IWeatherStation, Behavioral.Observer.V1.WeatherStation>();
             services.AddSingleton<Behavioral.Observer.V2.IWeatherStation, Behavioral.Observer.V2.WeatherStation>();
+        }
+
+        public static void AddAdapterServices(this IServiceCollection services)
+        {
+            services.AddScoped<ILegacyLibrary, LegacyLibrary>();
+            services.AddScoped<IModernLibrary, LegacyLibraryAdapter>();
         }
     }
 }

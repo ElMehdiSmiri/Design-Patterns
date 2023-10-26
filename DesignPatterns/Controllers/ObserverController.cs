@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Behavioral.Observer;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
 {
@@ -14,7 +13,6 @@ namespace DesignPatterns.Controllers
         {
             _weatherStationV1 = weatherStationV1;
             _weatherStationV2 = weatherStationV2;
-
         }
 
         [HttpGet("/V1/SendWeatherUpdate")]
