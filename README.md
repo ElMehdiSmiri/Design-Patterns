@@ -5,6 +5,7 @@ This repository contains examples of the most commonly used design patterns in C
 ## Patterns Included
 - Behavioral Patterns
   - Strategy
+  - Observer
 - Creational Patterns
   - Factory Method
   - Singleton
@@ -28,7 +29,6 @@ This repository contains examples of the most commonly used design patterns in C
   - Iterator
   - Mediator
   - Memento
-  - Observer
   - State
   - Template Method
   - Visitor
