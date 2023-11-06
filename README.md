@@ -11,6 +11,7 @@ This repository contains examples of the most commonly used design patterns in C
   - Singleton
 - Structural Patterns
   - Adapter
+  - Facade
 ## Roadmap for the future
 - Creational Patterns
   - Abstract Factory
@@ -20,7 +21,6 @@ This repository contains examples of the most commonly used design patterns in C
   - Bridge
   - Composite
   - Decorator
-  - Facade
   - Flyweight
   - Proxy
 - Behavioral Patterns
