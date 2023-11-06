@@ -6,6 +6,7 @@ using DesignPatterns.Behavioral.Strategy.CookingStrategies;
 using DesignPatterns.Behavioral.Strategy;
 using DesignPatterns.Structural.Adapter.Interfaces;
 using DesignPatterns.Structural.Adapter;
+using DesignPatterns.Structural.Facade;
 
 namespace DesignPatterns.Extensions
 {
@@ -18,6 +19,7 @@ namespace DesignPatterns.Extensions
             services.AddSingletonServices();
             services.AddObserverServices();
             services.AddAdapterServices();
+            services.AddFacadeServices();
         }
 
         public static void AddStrategyServices(this IServiceCollection services)
@@ -52,6 +54,11 @@ namespace DesignPatterns.Extensions
         {
             services.AddScoped<ILegacyLibrary, LegacyLibrary>();
             services.AddScoped<IModernLibrary, LegacyLibraryAdapter>();
+        }
+
+        public static void AddFacadeServices(this IServiceCollection services)
+        {
+            services.AddScoped<IComputerFacade, ComputerFacade>();
         }
     }
 }
