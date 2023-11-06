@@ -1,4 +1,6 @@
-﻿using DesignPatterns.Structural.Adapter.Interfaces;
+﻿using DesignPatterns.Behavioral.Command;
+using DesignPatterns.Behavioral.Command.Commands;
+using DesignPatterns.Behavioral.Command.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
@@ -7,17 +9,23 @@ namespace DesignPatterns.Controllers
     [ApiController]
     public class AdapterController : ControllerBase
     {
-        private readonly IModernLibrary _modernLibrary;
+        private readonly IRemoteControl _remoteControl;
 
-        public AdapterController(IModernLibrary modernLibrary)
+        public AdapterController(IRemoteControl remoteControl)
         {
-            _modernLibrary = modernLibrary;
+            _remoteControl = remoteControl;
         }
 
-        [HttpGet("/DoSomethingNew")]
-        public IActionResult Get()
+        [HttpPost("/TurnOnLight")]
+        public IActionResult Post()
         {
-            return Ok(_modernLibrary.DoSomethingNew());
+            Light livingRoomLight = new();
+
+            ICommand turnOnCommand = new TurnOnLightCommand(livingRoomLight);
+
+            _remoteControl.Execute(turnOnCommand);
+
+            return Ok();
         }
     }
 }

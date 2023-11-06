@@ -7,6 +7,8 @@ using DesignPatterns.Behavioral.Strategy;
 using DesignPatterns.Structural.Adapter.Interfaces;
 using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Facade;
+using DesignPatterns.Behavioral.Command.Interfaces;
+using DesignPatterns.Behavioral.Command;
 
 namespace DesignPatterns.Extensions
 {
@@ -20,6 +22,7 @@ namespace DesignPatterns.Extensions
             services.AddObserverServices();
             services.AddAdapterServices();
             services.AddFacadeServices();
+            services.AddCommandServices();
         }
 
         public static void AddStrategyServices(this IServiceCollection services)
@@ -59,6 +62,11 @@ namespace DesignPatterns.Extensions
         public static void AddFacadeServices(this IServiceCollection services)
         {
             services.AddScoped<IComputerFacade, ComputerFacade>();
+        }
+
+        public static void AddCommandServices(this IServiceCollection services)
+        {
+            services.AddScoped<IRemoteControl, RemoteControl>();
         }
     }
 }

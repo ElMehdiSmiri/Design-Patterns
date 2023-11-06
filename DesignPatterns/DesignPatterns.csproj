@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Behavioral.Command\DesignPatterns.Behavioral.Command.csproj" />
     <ProjectReference Include="..\DesignPatterns.Behavioral.Observer\DesignPatterns.Behavioral.Observer.csproj" />
     <ProjectReference Include="..\DesignPatterns.Creational.Singleton\DesignPatterns.Creational.Singleton.csproj" />
     <ProjectReference Include="..\DesignPatterns.Creational.FactoryMethod\DesignPatterns.Creational.FactoryMethod.csproj" />

@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Structural.Adapter.Interfaces;
-using DesignPatterns.Structural.Facade;
+﻿using DesignPatterns.Structural.Facade;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesignPatterns.Controllers
